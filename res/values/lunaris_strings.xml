@@ -2861,4 +2861,8 @@
     <string name="power_menu_compose_style_legacy">Legacy</string>
     <string name="power_menu_compose_style_grid">Grid</string>
     <string name="power_menu_compose_style_slider">Slider</string>
+
+    <string name="themes_boot_animation_title">Boot animation</string>
+    <string name="themes_boot_animation_summary">Set boot animation style</string>
+
 </resources>
