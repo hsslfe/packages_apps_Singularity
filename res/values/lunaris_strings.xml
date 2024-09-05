@@ -2876,4 +2876,14 @@
     <string name="boot_animation_no_preview">No preview available</string>    
     <string name="boot_animation_style_unknown">Unknown</string>
 
+    <string name="themes_audio_category">Audio</string>
+    <string name="themes_lock_sound_title">Lock sound</string>
+    <string name="themes_unlock_sound_title">Unlock sound</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_yes">Yes</string>
+    <string name="systemui_restart_not_now">Not now</string>
+
 </resources>
