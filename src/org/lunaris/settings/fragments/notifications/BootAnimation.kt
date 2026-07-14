@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.evolution.settings.fragments.themes
+package org.lunaris.settings.fragments.notifications;
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -91,7 +91,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.withContext
-import org.evolution.settings.utils.BootAnimationUtils
+import org.lunaris.settings.utils.BootAnimationUtils;
 import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream

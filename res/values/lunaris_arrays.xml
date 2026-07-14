@@ -1887,7 +1887,7 @@
 
  <!-- Themes/Boot animation -->
    <string-array name="themes_boot_animation_entries">
-        <item>Evolution X</item>
+        <item>Lunaris Aosp</item>
         <item>Evolution X (Reveal)</item>
         <item>AOKP</item>
         <item>CyanogenMod</item>
