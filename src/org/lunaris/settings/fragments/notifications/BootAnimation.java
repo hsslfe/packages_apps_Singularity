@@ -196,8 +196,8 @@ public class BootAnimation extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EVOLVER;
-    }
+      return MetricsProto.MetricsEvent.LUNARIS;
+     }
 
     /**
      * For search
