@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.infinity.suite.preferences
+package org.lunaris.settings.preferences
 
 import android.content.Context
 import android.content.res.Configuration
@@ -26,7 +26,7 @@ import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.settings.R
-import com.infinity.suite.utils.SystemUtils;
+import org.lunaris.settings.utils.SystemUtils
 import java.io.File
 import kotlin.math.min
 
