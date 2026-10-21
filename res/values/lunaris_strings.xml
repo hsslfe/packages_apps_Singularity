@@ -2868,22 +2868,11 @@
     <string name="boot_animation_preview_summary">Displays a preview of the currently selected boot animation</string>
     <string name="boot_animation_preview_title">Boot animation preview</string>    
 
-    <string name="boot_animation_applied">Boot animation applied</string>
     <string name="boot_animation_custom_pick">Pick ZIP file</string>
     <string name="boot_animation_custom_pick_summary">Select a custom bootanimation.zip</string>
     <string name="boot_animation_applied_error">Failed to apply boot animation</string>
     <string name="boot_animation_preview_loading">Loading preview…</string>
     <string name="boot_animation_no_preview">No preview available</string>    
     <string name="boot_animation_style_unknown">Unknown</string>
-
-    <string name="themes_audio_category">Audio</string>
-    <string name="themes_lock_sound_title">Lock sound</string>
-    <string name="themes_unlock_sound_title">Unlock sound</string>
-
-    <!-- SystemUI restart dialog -->
-    <string name="systemui_restart_title">SystemUI restart required</string>
-    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
-    <string name="systemui_restart_yes">Yes</string>
-    <string name="systemui_restart_not_now">Not now</string>
 
 </resources>
