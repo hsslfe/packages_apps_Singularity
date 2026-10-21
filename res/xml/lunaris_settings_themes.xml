@@ -93,6 +93,23 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="themes_audio_category"
+        android:title="@string/themes_audio_category">
+
+        <!-- Lock sound -->
+        <org.lunaris.settings.preferences.SoundPickerPreference
+            android:key="lock_sound"
+            android:title="@string/themes_lock_sound_title"
+            android:defaultValue="/product/media/audio/ui/Lock.ogg" />
+
+        <!-- Unlock sound -->
+        <org.lunaris.settings.preferences.SoundPickerPreference
+            android:key="unlock_sound"
+            android:title="@string/themes_unlock_sound_title"
+            android:defaultValue="/product/media/audio/ui/Unlock.ogg" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="volume_category"
         android:title="@string/volume_category">
 

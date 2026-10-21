@@ -41,6 +41,7 @@ import org.lunaris.settings.utils.SystemUtils;
 import org.lunaris.settings.preferences.SystemSettingListPreference;
 import org.lunaris.settings.preferences.SystemPropertySwitchPreference;
 import org.lunaris.settings.preferences.SystemSettingSwitchPreference;
+import org.lunaris.settings.preferences.SoundPickerPreference;
 
 import com.android.internal.util.lunaris.VibrationUtils;
 
@@ -61,6 +62,8 @@ public class Themes extends SettingsPreferenceFragment implements
     private static final String KEY_QUICKSWITCH = "quickswitch";
     private static final String KEY_SHOW_VOLUME_PERCENTAGE = "show_volume_percentage";
     private static final String KEY_AXION_VOLUME_STYLE = "axion_volume_style";
+    private static final String KEY_LOCK_SOUND = "lock_sound";
+    private static final String KEY_UNLOCK_SOUND = "unlock_sound";
 
     private static final int VOLUME_TYPE_AXION = 0;
     private static final int VOLUME_TYPE_REDESIGNED = 1;
@@ -72,12 +75,31 @@ public class Themes extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mAxionVolumeStyle;
     private SystemSettingSwitchPreference mShowVolumePercentage;
     private ThemeUtils mThemeUtils;
+    private SoundPickerPreference mLockSound;
+    private SoundPickerPreference mUnlockSound;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lunaris_settings_themes);
+
+        mLockSound = (SoundPickerPreference) findPreference(KEY_LOCK_SOUND);
+        if (mLockSound != null) {
+            mLockSound.entries = getResources().getTextArray(R.array.themes_lock_unlock_sounds_entries);
+            mLockSound.entryValues = getResources().getTextArray(R.array.themes_lock_sounds_values);
+            mLockSound.settingKey = "lock_sound";
+            mLockSound.defaultValue = "/product/media/audio/ui/Lock.ogg";
+            mLockSound.applyConfig();
+        }
+        mUnlockSound = (SoundPickerPreference) findPreference(KEY_UNLOCK_SOUND);
+        if (mUnlockSound != null) {
+            mUnlockSound.entries = getResources().getTextArray(R.array.themes_lock_unlock_sounds_entries);
+            mUnlockSound.entryValues = getResources().getTextArray(R.array.themes_unlock_sounds_values);
+            mUnlockSound.settingKey = "unlock_sound";
+            mUnlockSound.defaultValue = "/product/media/audio/ui/Unlock.ogg";
+            mUnlockSound.applyConfig();
+        }
 
         Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
