@@ -101,7 +101,7 @@
         android:summary="@string/pulse_height_multiplier_summary"
         settings:units="%"
         android:defaultValue="100"
-        settings:min="25"
+        settings:min="0"
         settings:interval="5"
         android:max="200"
         android:dependency="lockscreen_pulse_enabled" />
